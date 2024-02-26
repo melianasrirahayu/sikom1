@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Peminjaman extends Model
 {
     use HasFactory;
+    protected $table = "oeminjaman";
     protected $guarded = ['id'];
 
     public function user()

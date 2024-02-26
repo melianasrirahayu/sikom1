@@ -4,7 +4,7 @@
 <!-- breadcrumb -->
 <div class="breadcrumb-header justify-content-between">
     <div>
-        <h4 class="content-title mb-2">Hi, welcome back!</h4>
+        <h4 class="content-title mb-2">Hi, Peminjaman!</h4>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a   href="javascript:void(0);">Tables</a></li>
@@ -34,10 +34,11 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Judul</th>
-                                <th>Penulis</th>
-                                <th>Penerbit</th>
-                                <th>Tahun Terbit</th>
+                                <th>User</th>
+                                <th>Buku</th>
+                                <th>Tanggal Peminjaman</th>
+                                <th>Tanggal pengembalian</th>
+                                <th>Status</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -45,10 +46,10 @@
                             @foreach ($buku as $dt)
                             <tr>
                                 <th scope="row">{{ $loop->iteration }}</th>
-                                <td>{{ $dt->user }}</td>
+                                <td>{{ $dt->User }}</td>
                                 <td>{{ $dt->Buku }}</td>
-                                <td>{{ $dt->Tanggal_peminjaman }}</td>
-                                <td>{{ $dt->tanggal_pengembalian }}</td>
+                                <td>{{ $dt->Tanggal Peminjaman }}</td>
+                                <td>{{ $dt->Tanggal pengembalian }}</td>
                                 <td>{{ $dt->Status }}</td>
                                 <td>{{ $dt->Action }}</td>
                                 <td>
